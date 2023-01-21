@@ -25,7 +25,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody v-if="filteredProducts.length">
           <tr v-for="(product, i) in filteredProducts" :key="i">
             <td>{{ product.name }}</td>
             <td>{{ formatCurrency(product.price) }}</td>
@@ -46,6 +46,12 @@
                 </button>
               </div>
             </td>
+          </tr>
+        </tbody>
+
+        <tbody v-else>
+          <tr>
+            <td colspan="3">No products found.</td>
           </tr>
         </tbody>
       </table>
