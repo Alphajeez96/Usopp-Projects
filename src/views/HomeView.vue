@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <!-- Hero Section  -->
+  <section class="contain">
+    <Hero />
+  </section>
+
+  <!-- Header Text Section -->
+  <section class="pt-32 contain">
+    <HeaderText />
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="pt-36">
+    <CallToAction />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Hero from "@/components/home/Hero";
+import HeaderText from "@/components/home/HeaderText";
+import CallToAction from "@/components/CallToAction";
 
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  name: "HomeView",
+  components: { Hero, HeaderText, CallToAction },
+};
 </script>
