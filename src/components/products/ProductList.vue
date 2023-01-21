@@ -1,9 +1,9 @@
 <template>
   <!-- Search region -->
-  <div class="flex items-center w-[50%]">
+  <div class="flex items-center flex-wrap lg:flex-nowrap w-full lg:w-[50%]">
     <h1 class="text-5xl font-bold">Products</h1>
 
-    <div class="ml-auto w-[42%]">
+    <div class="ml-auto w-full lg:w-[42%] mt-6 lg:mt-0">
       <input
         type="text"
         id="search"
@@ -13,9 +13,9 @@
     </div>
   </div>
 
-  <section class="mt-20 flex justify-between">
+  <section class="mt-20 flex flex-wrap lg:flex-nowrap justify-between">
     <!-- Table Here -->
-    <div class="w-[50%]">
+    <div class="w-full lg:w-[50%]">
       <table>
         <thead>
           <tr>
@@ -52,7 +52,7 @@
     </div>
 
     <!--Form Here-->
-    <div class="w-[40%]">
+    <div class="w-full lg:w-[40%]">
       <NewProduct :products="products" />
     </div>
   </section>

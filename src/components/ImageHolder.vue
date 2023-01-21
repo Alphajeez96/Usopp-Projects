@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .holder {
-  @apply h-[550px] w-[600px] bg-[#c4c4c4];
+  @apply h-[400px] w-full md:h-[550px] lg:w-[600px] bg-[#c4c4c4];
 
   &.small {
     @apply h-[250px] w-[250px] bg-[#9d9d9d];

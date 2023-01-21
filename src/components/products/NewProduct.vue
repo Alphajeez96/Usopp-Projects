@@ -118,6 +118,6 @@ export default {
 
 <style lang="scss" scoped>
 .form__holder {
-  @apply bg-[#ececec] py-12 px-20;
+  @apply bg-[#ececec] py-12 px-5 lg:px-20 mt-12 lg:mt-0;
 }
 </style>

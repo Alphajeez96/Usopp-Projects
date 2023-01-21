@@ -5,12 +5,12 @@
   </section>
 
   <!-- Header Text Section -->
-  <section class="pt-32 contain">
+  <section class="pt-16 xl:pt-32 contain">
     <HeaderText />
   </section>
 
   <!-- Call to Action Section -->
-  <section class="pt-36">
+  <section class="pt-16 xl:pt-36">
     <CallToAction />
   </section>
 </template>
